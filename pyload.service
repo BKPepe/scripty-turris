@@ -1,0 +1,11 @@
+[Unit]
+Description=Downloadtool for One-Click-Hoster written in python.
+After=network.target
+
+[Service]
+ExecStart=/root/pyload/pyLoadCore.py
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
